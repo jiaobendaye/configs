@@ -1,0 +1,148 @@
+{
+  "matlab.matlabpath": "/opt/MATLAB/R2017a/bin/matlab",
+  "editor.wordWrap": "on",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "xelatex",
+      "command": "xelatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "--shell-escape",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "--shell-escape",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "bibtex",
+      "command": "bibtex",
+      "args": [
+        "%DOCFILE%"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "xelatex -> bibtex -> xelatex*2",
+      "tools": [
+        "xelatex",
+        "bibtex",
+        "xelatex",
+        "xelatex"
+      ]
+    },
+    {
+      "name": "bibtex",
+      "tools": [
+        "bibtex"
+      ]
+    },
+    {
+      "name": "xelatex",
+      "tools": [
+        "xelatex"
+      ]
+    },
+    {
+      "name": "pdflatex",
+      "tools": [
+        "pdflatex"
+      ]
+    },
+    {
+      "name": "latexmk",
+      "tools": [
+        "latexmk"
+      ]
+    },
+    {
+      "name": "pdflatex -> bibtex -> pdflatex*2",
+      "tools": [
+        "pdflatex",
+        "bibtex",
+        "pdflatex",
+        "pdflatex"
+      ]
+    }
+  ],
+  "editor.fontSize": 27,
+  "matlab-runner.matlabPath": "/opt/MATLAB/R2017a/bin/matlab",
+  "matlab.mlintpath": "/opt/MATLAB/R2017a/bin/glnxa64/mlint",
+  "latex-workshop.latex.autoBuild.run": "never",
+  "latex-workshop.view.pdf.viewer": "external",
+  "python.linting.pylintArgs": [
+    "--disable=E1101, E0611"
+  ],
+  "workbench.colorTheme": "Monokai",
+  "latex-workshop.message.update.show": false,
+  "python.dataScience.sendSelectionToInteractiveWindow": false,
+  "leetcode.workspaceFolder": "",
+  "window.zoomLevel": 0,
+  "vim.easymotion": true,
+  "vim.sneak": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before":["Z","Z"],
+      "commands":[":wq"]
+    },
+    {
+      "before":["Z","Q"],
+      "commands":[":q!"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    }
+  ],
+  "vim.leader": ",",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-m>": false,
+    "<C-x>": false,
+    "<C-c>": false,
+    "<C-v>": false
+  },
+  "C_Cpp.updateChannel": "Insiders",
+  "http.proxySupport": "off",
+  "cmake.configureOnOpen": false,
+  "terminal.integrated.fontSize": 17,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true
+  },
+  "editor.tabSize": 2
+}
